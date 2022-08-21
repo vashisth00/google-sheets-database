@@ -9,7 +9,7 @@ export async function getServerSideProps({ query }) {
 
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.SHEET_ID,
-    range: 'Sheet1!A2:A4',
+    range: 'Sheet1!A2:A879',
   });
 
   const posts = response.data.values.flat();

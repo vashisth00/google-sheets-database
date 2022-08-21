@@ -17,6 +17,8 @@ export async function getServerSideProps({ query }) {
       range,
     });
 
+console.log(response.data.values);
+
     // Result
 
     const [title, content] = response.data.values[0];
